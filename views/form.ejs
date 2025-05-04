@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <h1>Add quote</h1>
+
+    <form action="/new" method="post">
+        <label for="name" id="labelName" name="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="text" id="labelText" name="text">Quote:</label>
+        <textarea name="text" id="text" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
