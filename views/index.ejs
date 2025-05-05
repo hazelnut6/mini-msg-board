@@ -4,21 +4,23 @@
 <body>
     <%- include('./partials/nav.ejs') %>
 
-    <div class="quotes content">
-        <h2>All quotes</h2>
+    <main>
+        <div class="content">
+            <h2>All quotes</h2>
 
-        <% if(quotes.length > 0) { %>
-            <% quotes.forEach(quote => { %>
-                <div class="quoteBlock">
-                    <h4 class="text"> "<%= quote.text %>" </h4>
-                    <p class="name"> -<%= quote.name %> </p>
-                    <p class="dateAdded"> <%= quote.added %> </p>
-                </div>
-            <% }); %>
-        <% } else { %>
-            <p>No quotes to display...</p>
-        <% }; %>
-    </div>
+            <% if(quotes.length > 0) { %>
+                <% quotes.forEach(quote => { %>
+                    <div class="quoteBlock">
+                        <h4 class="text"> "<%= quote.text %>" </h4>
+                        <p class="name"> - <%= quote.name %> </p>
+                        <p class="dateAdded">Posted: <%= quote.added %> </p>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p>No quotes to display...</p>
+            <% }; %>
+        </div>    
+    </main>
 
     <%- include('./partials/footer.ejs') %>
 </body>

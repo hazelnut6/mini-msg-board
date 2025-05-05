@@ -4,15 +4,19 @@
 <body>
     <%- include('./partials/nav.ejs') %>
 
-    <h1>Add quote</h1>
+    <main>
+        <div class="content">
+            <h2>Add quote</h2>
 
-    <form action="/new" method="post">
-        <label for="name" id="labelName" name="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="text" id="labelText" name="text">Quote:</label>
-        <textarea name="text" id="text" required></textarea>
-        <button type="submit">Submit</button>
-    </form>
+            <form action="/new" method="post">
+                <label for="name" id="labelName" name="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Jennifer Barkley" required>
+                <label for="text" id="labelText" name="text">Quote:</label>
+                <textarea name="text" id="text" required placeholder="PONCHO!"></textarea>
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </main>
 
     <%- include('./partials/footer.ejs') %>
 </body>
