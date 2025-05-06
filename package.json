@@ -1,5 +1,5 @@
 {
-  "name": "mini-msg-board",
+  "name": "quote-me",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hazelnut6/mini-msg-board.git"
+    "url": "git+https://github.com/hazelnut6/quote-me.git"
   },
   "author": "hazelnut6",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hazelnut6/mini-msg-board/issues"
+    "url": "https://github.com/hazelnut6/quote-me/issues"
   },
-  "homepage": "https://github.com/hazelnut6/mini-msg-board#readme",
+  "homepage": "https://github.com/hazelnut6/quote-me#readme",
   "description": "",
   "dependencies": {
     "dotenv": "^16.5.0",
