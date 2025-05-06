@@ -54,7 +54,7 @@ a {
     color: black;
 }
 
-nav {
+nav, header {
     position: fixed;
     width: 100vw;
     height: 10vh;
@@ -65,6 +65,13 @@ nav {
     padding: 0 50px;
     color: black;
     box-shadow: 5px 3px 10px #a0a0a0;
+}
+
+header a h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .siteName h1 a {
@@ -83,6 +90,13 @@ nav ul {
 }
 
 nav ul li:hover {
+    text-decoration: underline;
+    text-decoration-color: #d7e788;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+
+header a h2:hover {
     text-decoration: underline;
     text-decoration-color: #d7e788;
     text-underline-offset: 5px;
@@ -111,7 +125,7 @@ main {
 .quoteBlock {
     margin-bottom: 15px;
     width: 75%;
-    padding: 15px;
+    padding: 20px 15px;
     background-color: white;
     border-radius: 5px;
     display: flex;
@@ -127,13 +141,29 @@ main {
     cursor: pointer;
 }
 
+.detailBlock {
+    width: 75%;
+    padding: 70px 30px;
+    background-color: #d7e788;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    box-shadow: 3px 3px 10px #a0a0a0;
+}
+
+.leftArrow {
+    height: 30px;
+}
+
 .text {
     align-self: flex-start;
 }
 
 .dateAdded {
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 form {
@@ -183,6 +213,7 @@ footer {
     width: 100vw;
     padding: 5px 0;
     text-align: center;
+    margin-top: 20px;
 }
 
 
@@ -190,7 +221,7 @@ footer {
 
 /* sm */
 @media (width <= 640px) {
-    nav {
+    nav, header {
         padding: 0 10px;
     }
 
@@ -203,7 +234,7 @@ footer {
         font-size: 1.5rem;
     }
 
-    .quoteBlock {
+    .quoteBlock, .detailBlock {
         width: 100%;
         padding: 15px;
     }
