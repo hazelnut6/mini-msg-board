@@ -10,11 +10,10 @@
 
             <% if(quotes.length > 0) { %>
                 <% quotes.forEach(quote => { %>
-                    <div class="quoteBlock">
-                        <h4 class="text"> "<%= quote.text %>" </h4>
-                        <p class="name"> - <%= quote.name %> </p>
-                        <p class="dateAdded">Posted: <%= quote.added %> </p>
-                    </div>
+                    <a href="/quotes/<%= quote.id %>" class="quoteBlock">
+                    <h4 class="text"> "<%= quote.text %>" </h4>
+                    <p class="name"> - <%= quote.name %> </p>
+                    </a>
                 <% }); %>
             <% } else { %>
                 <p>No quotes to display...</p>

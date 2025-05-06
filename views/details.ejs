@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <header>
+        <a href="/">
+            <h2>
+                <img src="/imgs/arrow-left.svg" alt="Icon for left arrow" class="leftArrow">Back
+            </h2>
+        </a>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>Quote details</h2>
+
+            <div class="detailBlock">
+                <h4 class="text"> "<%= quote.text %>" </h4>
+                <p class="name"> - <%= quote.name %> </p>
+                <p class="dateAdded">Posted: <%= quote.added %> </p>
+            </div>
+            
+        </div>    
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
