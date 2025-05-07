@@ -1,4 +1,4 @@
-# Mini Message Board
+# Quote-Me
 Interactive web app developed using Node.js, Express, EJS, and JavaScript. This application is an activity within the [Node.js learning course](https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs).
 
 ## Description
